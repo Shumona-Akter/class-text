@@ -1,0 +1,337 @@
+:root{
+    --primarry-color:#dc143c;
+    --light-color:#fff;
+    --light-white:#d3d3d3;
+    --light-dark:#353535;
+    --dark:#000;
+    /* === color root end === */
+    --fs-h2:1.6rem;
+    --logo-fs:1.4rem;
+    --fs-h3:.8rem;
+    --fs-p:1rem;
+    --button-fs:1rem;
+    --sm-fs:0.8rem;
+    --a-fs:0.8rem;
+    --fs-h1:3rem;
+    /* === font size end === */
+    --transition: all linear 0.3s;
+    
+}
+/* ======= root part end =======
+================================ */
+
+
+/* ======= common css part start =======
+================================ */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+img{
+    width: 100%;
+    vertical-align: middle;
+}
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+p{
+    font-size: var(--fs-p);
+    color: var(--light-dark);
+    margin-top: 30px;
+    text-transform: initial;
+    line-height: 24px;
+}
+/* ======= common css part end =======
+====================================== */
+nav{
+   padding-top: 32px; 
+   padding-bottom: 24px;
+    background: #000;
+
+}
+nav #main_nav{
+  
+    display: flex;
+    justify-content: space-between;
+
+}
+nav #main_nav .logo_part{
+    width: 20%;
+}
+nav #main_nav .logo_part .logo{
+    text-transform: uppercase;
+    
+}
+nav #main_nav .logo_part h2{
+    font-size: var(--logo-fs);
+    color: var(--light-color);
+}
+nav #main_nav .logo_part h2 span{
+    color: var(--primarry-color);
+
+}
+nav #main_nav .logo_part small{
+
+    color: var(--light-white);
+    font-size: var(--sm-fs);
+}
+/* === logo part ends === */
+nav #main_nav .menu_part{
+    width: 50%;
+}
+nav #main_nav .menu_part ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav #main_nav .menu_part ul li a{
+    color: var(--light-color);
+    font-size:var(--a-fs) ;
+    text-transform: uppercase;
+    transition: var(--transition);
+}
+nav #main_nav .menu_part ul li:hover a{
+    color: var(--primarry-color);
+}
+nav #main_nav .menu_part{
+    
+}
+/* ======= navber css part start =======
+======================================= */
+
+
+/* ======= hader css part start =======
+====================================== */
+header{
+    padding-top: 20px;
+    padding-bottom: 18px;
+    background: var(--primarry-color);
+}
+header h3{
+    font-size: var(--fs-h3);
+    color: var(--dark);
+    text-transform: uppercase;
+    text-align: center;
+}
+header h3 span{
+    font-size: var(--fs-h3);
+    color: var(--light-color);
+    text-transform: lowercase;
+    text-align: center;
+}
+/* ======= nav part css part end =======
+====================================== */
+
+/* ======= banner part part start =======
+====================================== */
+#banner_part{
+    background: url(../images/banner.jpg) no-repeat center / cover;
+    padding-top: 106px;
+    padding-bottom: 146px;
+    position: relative;
+    z-index: 1;
+}
+#banner_part::after{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: "";
+    inset: 0;
+    background:rgba(224, 15, 57, 0.377);
+    z-index: -1;
+}
+#banner_part h2{
+    font-size: var(--fs-h2);
+    text-transform: uppercase;
+    color: var(--primarry-color);
+    margin-bottom: 20px;
+    position: relative;
+}
+#banner_part h2::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 0.1rem;
+    width: 400px;
+    background: var(--primarry-color);
+}
+#banner_part h1{
+    font-size: var(--fs-h1);
+    text-transform: uppercase;
+    color: var(--light-color);
+    letter-spacing: 15px;
+}
+#banner_part h1 span{
+    display: block;
+    font-size: 2rem;
+    letter-spacing: normal;
+    
+}
+#banner_part p{
+    font-size: var(--fs-p);
+    text-transform: inherit;
+    color: var(--light-color);
+    width: 500px;
+    padding-top: 26px;
+    padding-bottom: 72px;
+    line-height: 24px;
+}
+#banner_part a{
+    font-size: var(--fs-a);
+    text-transform: uppercase;
+    color: var(--primarry-color);
+    padding: 15px 35px;
+    font-weight: 700;
+    border: 1px solid var(--primarry-color);
+}
+/* ======= banner part part end =======
+====================================== */
+
+/* ======= counter part part end =======
+====================================== */
+#counter_part{
+    padding-top: 200px;
+    padding-bottom: 214px;
+}
+#counter_part .container .counter{
+    display: flex;
+    border-radius: 20px;
+    padding: 10px 0;
+    background: var(--primarry-color);
+
+}
+#counter_part .counter .item{
+width: 33.33%;
+padding-top: 110px;
+padding-bottom: 85px;
+text-align: center;
+
+}
+#counter_part .counter .item h1{
+    font-size: var(--fs-h1);
+    color: var(--light-color);
+}
+#counter_part .counter .item h1 span{
+    display: block;
+    text-transform: capitalize;
+    font-size: var(--fs-h2);
+}
+/* ======= counter part part end =======
+====================================== */
+
+/* ======= collection part part start =======
+====================================== */
+#collection{
+    padding-bottom: 300px;
+}
+
+#collection h1{
+    font-size: var(--fs-h2);
+    font-weight: 700;
+    color: var(--dark);
+    text-align: left;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+}
+#collection .item_main{
+    display: flex;
+    align-items: start;
+}
+#collection .item_main .iteams{
+    width: 16.66%;
+}
+#collection .item_main .iteams h3{
+    font-size: var(--fs-h2);
+    color: var(--primarry-color);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+#collection .item_main .iteams ul li{
+    font-size: 1rem;
+    color: var(--light-dark);
+    text-transform: capitalize;
+    font-weight: 400;
+    line-height: 24px;
+}
+/* ======= collection part part end =======
+====================================== */
+
+
+/* ======= about part part start =======
+====================================== */
+#about_part{
+    margin-bottom: 200px;
+}
+#about_part .about_main{
+display: flex;
+}
+#about_part .about_main .about_image{
+   
+}
+#about_part .about_main .about_image{
+    width: 65%;
+    height: 500px;
+    position: relative;
+    
+}
+#about_part .about_main .about_image .image1{
+    width: 700px;
+    height: 500px;
+    overflow: hidden;
+}
+#about_part .about_main .about_image .image2{
+    width: 700px;
+    height: 500px;
+    overflow: hidden;
+    position: absolute;
+    border-radius: 30px;
+    right: -450px;
+    top: -300px;
+    
+}
+#about_part .about_main .about_text{
+    width: 45%;
+    margin-top: 200px;
+    margin-left: 50px;
+}
+#about_part .about_main .about_text h2{
+    font-size: var(--fs-h2);
+    color: var(--dark);
+    margin-top: 30px;
+    text-transform: uppercase;
+    
+}
+#about_part .about_main .about_text p{
+    font-size: var(--fs-p);
+    color: var(--light-dark);
+    margin-top: 30px;
+    text-transform: initial;
+    line-height: 24px;
+    
+}
+#about_part .about_main .about_text a{
+    font-size: var(--fs-a);
+    color: var(--light-dark);
+    margin-top: 30px;
+    text-transform: uppercase;
+    padding: 15px 20px;
+    border: 1.5px solid var(--dark);
+    transition: var(--transition);
+}
+#about_part .about_main .about_text a:hover{
+   background: var(--primarry-color);
+   border: 1.5px solid var(--primarry-color);
+   color: var(--light-color);
+    
+}
+/* ======= about part part end =======
+====================================== */
